@@ -5,6 +5,6 @@ import platform
 IsBroken = platform.node() == 'aslw039050.ethz.ch'
 
 if not IsBroken:
-    from libnumpy_eigen import *
+    from .libnumpy_eigen import *
 else:
     print ("Warning: numpy_eigen is known to be broken here. Not actually loading it.")
